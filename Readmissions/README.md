@@ -13,10 +13,10 @@ under the Hospital Readmissions Reduction Program (HRRP). This analysis
 explores where those risks are concentrated and what drives them.
 
 ## Analysis Questions
-1. What are the readmission rates by department and insurance type?
-2. How do readmitted patients differ demographically and clinically?
-3. Does prior ED utilization predict readmission risk?
-4. Can a simple risk score identify high-risk patients at admission?
+1. What are the readmission rates by department and insurance type? [Readmissions by Department and Insurance Type](./docs/reports/Readmissions_by_Dept_Insurance.csv)
+2. How do readmitted patients differ demographically and clinically? [Clinical Comparisons for various Demographics](./docs/reports/Demographics_Clinical_Comparison.csv)
+3. Does prior Emergency Department (ED) utilization predict readmission risk? [Prior ED use as a Predictor](./docs/reports/Prior_ED_Use_As_Predictor.csv)
+4. Can a simple risk score identify high-risk patients at admission? [High Risk Patient Profiles](./docs/reports/High_Risk_Patient_Profile.csv)
 
 ## Key Findings
 - Uninsured patients show readmission rates of 22-26%, roughly 7-8 percentage 
@@ -30,6 +30,7 @@ explores where those risks are concentrated and what drives them.
 
 ## Tools Used
 - SQL Server (T-SQL)
+- Microsoft Excel
 - [Google Data Studio](https://datastudio.google.com/reporting/87912a2f-6ebd-45eb-9f4f-cf8f02d4b74a) (visualizations)
 
 ## Repository Structure
@@ -38,6 +39,8 @@ Readmissions/
 ├── Healthcare_Dataset_Raw.csv       # Original synthetic dataset (~554k rows, 44 columns)
 ├── Healthcare_Cleaned_Full.csv      # De-identified, cleaned version (42 columns)
 ├── data_quality_report.txt          # Inventory of 24 intentional data quality issues
+├── sql/
+│   └── Readmissions_Analysis.sql    # T-SQL queries for all 4 analysis questions
 ├── docs/
 │   ├── data-dictionary.md           # Full schema for all 6 database tables
 │   ├── analyst-guide.md             # Step-by-step guide: clean → identify → analyze → visualize
@@ -57,6 +60,9 @@ Readmissions/
   duplicate rows, date logic errors, typos, charge sign errors) used to validate the cleaning pipeline.
 
 ## Docs & Reports
+
+**SQL queries:**
+- [sql/Readmissions_Analysis.sql](sql/Readmissions_Analysis.sql) — Four T-SQL queries that produced the analysis reports: readmission rates by department and insurance, demographic/clinical comparison of readmitted vs. non-readmitted patients, prior ED utilization as a predictor, and a CTE-based composite risk score. Inline findings comments included.
 
 **Reference docs:**
 - [docs/data-dictionary.md](docs/data-dictionary.md) — Schema definitions for all 6 SQL Server tables 
