@@ -1,0 +1,301 @@
+======================================================================
+DATA QUALITY REPORT - Introduced Issues for Testing
+======================================================================
+
+SUMMARY OF INTRODUCED DATA QUALITY ISSUES
+----------------------------------------
+  missing_potassium_meq_l: 55768
+  missing_wbc_k_ul: 55752
+  missing_glucose_mg_dl: 55478
+  missing_creatinine_mg_dl: 55438
+  missing_hemoglobin_g_dl: 55415
+  missing_sodium_meq_l: 55126
+  missing_bmi: 44103
+  missing_o2_saturation_pct: 33438
+  missing_heart_rate_bpm: 33304
+  missing_temperature_f: 33065
+  missing_bp_diastolic: 33043
+  missing_bp_systolic: 32968
+  missing_provider: 27692
+  missing_disposition: 22250
+  missing_charges: 22180
+  missing_los: 16858
+  missing_race: 16764
+  missing_dx_desc: 16623
+  charge_data_entry_error: 11095
+  missing_age: 10242
+  invalid_dob: 10213
+  invalid_zip: 10200
+  invalid_satisfaction_score: 8707
+  negative_charge: 8380
+  missing_readmit_days: 8290
+  los_outlier: 8178
+  gender_format_inconsistency: 6731
+  impossible_vital_value: 5703
+  duplicate_row: 4988
+  typo: 4595
+  missing_lactate_mmol_l: 3063
+  discharge_before_admit: 2754
+  missing_hba1c_pct: 2686
+  missing_troponin_ng_ml: 2684
+  swapped_dates: 1451
+  swapped_names: 1345
+
+DETAILED EXAMPLES (first 5 of each type)
+----------------------------------------
+
+invalid_dob:
+  Row 0: Patient PT000001
+  Row 51: Patient PT000052
+  Row 69: Patient PT000070
+  Row 116: Patient PT000117
+  Row 258: Patient PT000259
+
+missing_age:
+  Row 0: Original: 86
+  Row 61: Original: 93
+  Row 82: Original: 74
+  Row 159: Original: 79
+  Row 211: Original: 64
+
+missing_bmi:
+  Row 0: Original: 24.9
+  Row 3: Original: 23.6
+  Row 11: Original: 28.9
+  Row 22: Original: 29.4
+  Row 23: Original: 30.2
+
+missing_potassium_meq_l:
+  Row 0: Original: 4.1
+  Row 9: Original: 4.2
+  Row 19: Original: 4.3
+  Row 41: Original: 4.4
+  Row 49: Original: 5.9
+
+missing_sodium_meq_l:
+  Row 0: Original: 142
+  Row 4: Original: 135
+  Row 7: Original: 139
+  Row 19: Original: 140
+  Row 28: Original: 144
+
+missing_hemoglobin_g_dl:
+  Row 1: Original: 13.7
+  Row 6: Original: 14.3
+  Row 7: Original: 12.6
+  Row 10: Original: 12.7
+  Row 12: Original: 14.2
+
+missing_temperature_f:
+  Row 1: Original: 98.1
+  Row 24: Original: 100.1
+  Row 37: Original: 98.8
+  Row 38: Original: 97.7
+  Row 69: Original: 98.0
+
+missing_wbc_k_ul:
+  Row 2: Original: 9.0
+  Row 8: Original: 7.7
+  Row 23: Original: 5.7
+  Row 24: Original: 9.1
+  Row 37: Original: 4.3
+
+missing_race:
+  Row 4: Original: White
+  Row 26: Original: White
+  Row 102: Original: Hispanic/Latino
+  Row 103: Original: White
+  Row 114: Original: White
+
+impossible_vital_value:
+  Row 4: heart_rate_bpm=0
+  Row 159: o2_saturation_pct=-5
+  Row 187: bp_systolic=nan
+  Row 233: heart_rate_bpm=0
+  Row 254: bp_diastolic=85
+
+missing_bp_systolic:
+  Row 4: Original: 128
+  Row 10: Original: 125
+  Row 17: Original: 141
+  Row 45: Original: 115
+  Row 60: Original: 125
+
+missing_provider:
+  Row 5: Original: MD0194
+  Row 13: Original: MD0069
+  Row 37: Original: MD0045
+  Row 42: Original: MD0061
+  Row 52: Original: MD0162
+
+missing_creatinine_mg_dl:
+  Row 7: Original: 0.91
+  Row 7: Original: 1.06
+  Row 8: Original: 0.84
+  Row 17: Original: 1.65
+  Row 22: Original: 1.36
+
+missing_glucose_mg_dl:
+  Row 7: Original: 89
+  Row 9: Original: 60
+  Row 14: Original: 121
+  Row 16: Original: 93
+  Row 23: Original: 104
+
+missing_heart_rate_bpm:
+  Row 8: Original: 69
+  Row 16: Original: 31
+  Row 63: Original: 86
+  Row 81: Original: 112
+  Row 83: Original: 63
+
+missing_disposition:
+  Row 13: Original: Home
+  Row 29: Original: Home
+  Row 42: Original: Home
+  Row 42: Original: Skilled Nursing Facility
+  Row 62: Original: Home
+
+missing_charges:
+  Row 13: Original: 78970.52
+  Row 27: Original: 11291.99
+  Row 36: Original: 12858.57
+  Row 37: Original: -23627.53
+  Row 60: Original: 8263.32
+
+missing_troponin_ng_ml:
+  Row 17: Original: 0.487
+  Row 194: Original: 0.02
+  Row 591: Original: 0.382
+  Row 665: Original: 0.188
+  Row 728: Original: 1.137
+
+missing_bp_diastolic:
+  Row 19: Original: 75
+  Row 26: Original: 97
+  Row 60: Original: 87
+  Row 68: Original: 75
+  Row 71: Original: 72
+
+missing_los:
+  Row 19: Original: 13.0
+  Row 23: Original: 2.1
+  Row 39: Original: 1.5
+  Row 42: Original: 4.3
+  Row 55: Original: 13.6
+
+missing_o2_saturation_pct:
+  Row 23: Original: 95.4
+  Row 30: Original: 99.5
+  Row 32: Original: 88.4
+  Row 34: Original: 98.0
+  Row 49: Original: 97.5
+
+invalid_zip:
+  Row 30: Patient PT000031
+  Row 46: Patient PT000047
+  Row 67: Patient PT000068
+  Row 69: Patient PT000070
+  Row 195: Patient PT000196
+
+charge_data_entry_error:
+  Row 35: $2,324,257.00
+  Row 96: $1,387,013.00
+  Row 102: $724,908.00
+  Row 104: $1,159,771.00
+  Row 184: $5,147,303.00
+
+missing_dx_desc:
+  Row 36: Original: Tibia fracture
+  Row 44: Original: Major depressive disorder
+  Row 60: Original: UTI
+  Row 63: Original: Essential hypertension
+  Row 64: Original: Sepsis unspecified
+
+negative_charge:
+  Row 37: $-23,627.53
+  Row 54: $-30,886.85
+  Row 89: $-46,236.80
+  Row 152: $-29,764.31
+  Row 221: $-3,991.59
+
+discharge_before_admit:
+  Row 40: Admit: 2024-01-04, Discharge: 2023-12-31
+  Row 107: Admit: 2020-04-20, Discharge: 2020-04-19
+  Row 518: Admit: 2022-02-25, Discharge: 2022-02-23
+  Row 624: Admit: 2021-06-21, Discharge: 2021-06-16
+  Row 641: Admit: 2024-11-27, Discharge: 2024-11-25
+
+gender_format_inconsistency:
+  Row 47: ''
+  Row 126: 'male'
+  Row 148: 'male'
+  Row 157: ''
+  Row 177: 'MALE'
+
+missing_readmit_days:
+  Row 76: Original: 10
+  Row 169: Original: 22
+  Row 191: Original: 4
+  Row 195: Original: 7
+  Row 209: Original: 2
+
+typo:
+  Row 78: 'Cardiology' -> 'cardiology'
+  Row 105: 'Medicare' -> 'Medcare'
+  Row 110: 'Cardiology' -> 'Cardio'
+  Row 278: 'Emergency' -> 'Emrgency'
+  Row 301: 'Medicare' -> 'medicare'
+
+invalid_satisfaction_score:
+  Row 86: -1
+  Row 109: 0
+  Row 179: 99
+  Row 222: 0
+  Row 279: 11
+
+missing_hba1c_pct:
+  Row 96: Original: 8.4
+  Row 101: Original: 5.4
+  Row 154: Original: 9.2
+  Row 185: Original: 8.8
+  Row 493: Original: 8.2
+
+missing_lactate_mmol_l:
+  Row 164: Original: 7.3
+  Row 190: Original: 3.4
+  Row 400: Original: 3.3
+  Row 542: Original: 2.5
+  Row 659: Original: 4.7
+
+los_outlier:
+  Row 208: 60.6 days
+  Row 213: 94.0 days
+  Row 216: 101.1 days
+  Row 221: 70.2 days
+  Row 302: 87.4 days
+
+duplicate_row:
+  Row 116739: Row 116739
+  Row 26225: Row 26225
+  Row 288389: Row 288389
+  Row 256787: Row 256787
+  Row 234053: Row 234053
+
+swapped_names:
+  Row 152203: Row 152203
+  Row 558850: Row 558850
+  Row 333025: Row 333025
+  Row 152591: Row 152591
+  Row 334168: Row 334168
+
+swapped_dates:
+  Row 165725: Row 165725
+  Row 332918: Row 332918
+  Row 71108: Row 71108
+  Row 124138: Row 124138
+  Row 193079: Row 193079
+
+======================================================================
+Use this report to validate data cleaning pipelines.
+======================================================================

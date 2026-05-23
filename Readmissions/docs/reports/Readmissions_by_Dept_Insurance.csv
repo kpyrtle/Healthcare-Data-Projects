@@ -1,0 +1,81 @@
+﻿department,insurance_type,total_encounters,total_readmissions,readmission_rate_pct
+ICU,Uninsured,7200,1848,25.67
+Pulmonology,Uninsured,2722,691,25.39
+Neurology,Uninsured,2007,504,25.11
+Oncology,Uninsured,1054,264,25.05
+Nephrology,Uninsured,3335,832,24.95
+General Surgery,Uninsured,808,200,24.75
+Emergency,Uninsured,7851,1910,24.33
+Cardiology,Uninsured,3624,875,24.14
+Internal Medicine,Uninsured,9444,2221,23.52
+ICU,Medicaid,13259,3007,22.68
+Orthopedics,Uninsured,4570,1025,22.43
+Psychiatry,Uninsured,2471,554,22.42
+Pulmonology,Medicaid,5061,1132,22.37
+OB/GYN,Uninsured,1230,274,22.28
+Pediatrics,Uninsured,1188,264,22.22
+Oncology,Medicaid,2203,473,21.47
+Emergency,Medicaid,14201,2989,21.05
+Nephrology,Medicaid,6437,1353,21.02
+General Surgery,Medicaid,1381,288,20.85
+Neurology,Medicaid,3516,721,20.51
+Cardiology,Medicaid,6772,1374,20.29
+Internal Medicine,Medicaid,16517,3291,19.92
+ICU,Worker's Comp,3357,665,19.81
+ICU,VA,1682,325,19.32
+Pulmonology,Worker's Comp,1235,238,19.27
+General Surgery,Medicare,2559,492,19.23
+ICU,Medicare,23422,4482,19.14
+OB/GYN,Medicaid,2048,389,18.99
+Orthopedics,Medicaid,8284,1565,18.89
+ICU,Private,33256,6262,18.83
+Psychiatry,Medicaid,4646,873,18.79
+Pulmonology,Medicare,9008,1642,18.23
+ICU,Tricare,2537,458,18.05
+Pulmonology,Private,12767,2300,18.02
+Cardiology,Tricare,1317,237,18
+Pulmonology,VA,629,113,17.97
+Oncology,Medicare,3816,677,17.74
+Nephrology,Worker's Comp,1678,295,17.58
+Oncology,Private,5496,964,17.54
+Oncology,Worker's Comp,502,88,17.53
+General Surgery,Private,3701,642,17.35
+Emergency,Tricare,2725,465,17.06
+Pediatrics,Medicaid,2092,356,17.02
+Emergency,Worker's Comp,3529,594,16.83
+Nephrology,Private,16171,2718,16.81
+Emergency,Private,36203,6068,16.76
+Emergency,Medicare,25036,4186,16.72
+Neurology,Medicare,6384,1062,16.64
+Cardiology,Medicare,11582,1923,16.6
+Emergency,VA,1839,305,16.59
+Psychiatry,VA,579,95,16.41
+Nephrology,Medicare,11222,1837,16.37
+Internal Medicine,Worker's Comp,4250,694,16.33
+Cardiology,Private,16602,2695,16.23
+Cardiology,VA,824,133,16.14
+Neurology,Private,8988,1443,16.05
+Internal Medicine,VA,2129,338,15.88
+Orthopedics,Worker's Comp,2137,336,15.72
+Psychiatry,Worker's Comp,1191,187,15.7
+Neurology,Tricare,696,109,15.66
+Internal Medicine,Tricare,3115,486,15.6
+Pulmonology,Tricare,983,153,15.56
+Nephrology,Tricare,1139,177,15.54
+Internal Medicine,Medicare,29218,4486,15.35
+Psychiatry,Medicare,8096,1234,15.24
+Cardiology,Worker's Comp,1585,241,15.21
+Psychiatry,Tricare,908,138,15.2
+Nephrology,VA,855,130,15.2
+Internal Medicine,Private,42185,6410,15.19
+Orthopedics,VA,1105,167,15.11
+Neurology,Worker's Comp,904,133,14.71
+Psychiatry,Private,11566,1694,14.65
+Orthopedics,Tricare,1599,231,14.45
+Orthopedics,Private,21287,3071,14.43
+Orthopedics,Medicare,14761,2053,13.91
+OB/GYN,Medicare,3664,488,13.32
+OB/GYN,Private,5227,670,12.82
+Pediatrics,Medicare,3560,443,12.44
+Pediatrics,Private,5251,622,11.85
+Pediatrics,Worker's Comp,513,59,11.5
